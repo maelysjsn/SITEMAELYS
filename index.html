@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Maëlys Janson</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="Oliver.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" href="LEMONMILK.otf" as="font" type="font/otf" crossorigin="anonymous">
+</head>
+<body>
+   
+    <header>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <div class="nav-container">
+            <h1 class="logo">Maëlys<br>Janson</h1>
+            <nav>
+                <ul>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#about">À PROPOS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#cv">MON CV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section id="portfolio">
+            <h2>PORTFOLIO</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="Images/le-soleil.jpeg" alt="le-soleil">
+                    <p>AFFICHES</p>
+                </div>
+                <div class="grid-item">
+                    <img src="Images/kusmi-tea.jpeg" alt="kusmi-tea">
+                    <p>PACKAGING</p>
+                </div>
+                <div class="grid-item wide">
+                    <img src="Images/ronron.jpeg" alt="ronron">
+                    <p>CHARTES GRAPHIQUES</p>
+                </div>
+                <div class="grid-item">
+                    <img src="Images/zestee.jpeg" alt="zestee">
+                    <p>LOGOS</p>
+                </div>
+                <div class="grid-item">
+                    <img src="Images/photographies.jpeg" alt="photo">
+                    <p>PHOTOGRAPHIES</p>
+                </div>
+                <div class="grid-item wide">
+                    <img src="Images/miel.jpeg" alt="miel">
+                    <p>AUTRES</p>
+                   
+                        </div>
+                    </section>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+   
+    <footer>
+        <p>© Tous droits réservés - Maëlys JANSON</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector("nav ul");
+            nav.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
+
+
